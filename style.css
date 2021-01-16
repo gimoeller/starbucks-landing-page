@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Product Sans", sans-serif;
+    color: #332418;
+    overflow: hidden;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    margin-bottom: 5rem;
+}
+
+nav .menu {
+    justify-self: center;
+}
+
+nav .logo img {
+    width: 64px;
+    height: 64px;
+}
+
+nav .menu ul {
+    display: flex;
+    gap: 5rem;
+}
+
+nav .menu ul a {
+    font-size: 1.1rem;
+    list-style-type: none;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+main {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+main .starbucks-text {
+    padding-left: 3rem;
+}
+
+main .starbucks-text h2 {
+    font-size: 3rem;
+} 
+
+main .starbucks-text h1 {
+    font-size: 5rem;
+} 
+
+main .starbucks-text h1 span {
+    color: #176A37;
+} 
+
+main .starbucks-text p {
+    margin-top: 2rem;
+    max-width: 30rem;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .starbucks-text .buttons {
+    max-width: 30rem;
+    display: flex;
+    margin-top: 4rem;
+}
+
+main .starbucks-text .buttons button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #176A37;
+    background: transparent;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+main .starbucks-text .buttons button:hover {
+    transform: translateY(-10px)
+}
+
+main .starbucks-text .buttons button:first-child {
+    background: #176A37;
+    color: white;
+    margin-right: 5rem;
+}
+
+main .circle {
+    position: absolute;
+    min-width: 100%;
+    min-height: 130%;
+    background: #176A37;
+    clip-path: circle(40%);
+    top: 15rem;
+    right: -40rem;
+    z-index: -1;
+}
+
+main img {
+    max-width: 30%;
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    z-index: 2;
+}
