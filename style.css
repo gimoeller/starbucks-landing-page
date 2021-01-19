@@ -39,77 +39,72 @@ nav .menu ul a {
 }
 
 main {
-    padding: 3rem;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-}
-
-main .starbucks-text {
-    padding-left: 3rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 3rem;
 }
 
 main .starbucks-text h2 {
-    font-size: 3rem;
-} 
+    font-size: 3.5rem;
+}
 
 main .starbucks-text h1 {
     font-size: 5rem;
-} 
+}
 
 main .starbucks-text h1 span {
     color: #176A37;
-} 
+}
 
 main .starbucks-text p {
     margin-top: 2rem;
-    max-width: 30rem;
-    line-height: 1.7rem;
     font-size: 1.2rem;
-}
-
-main .starbucks-text .buttons {
-    max-width: 30rem;
-    display: flex;
-    margin-top: 4rem;
+    max-width: 80%;
+    line-height: 1.7rem;
 }
 
 main .starbucks-text .buttons button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    margin-top: 5rem;
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: bold;
-    border: 2px solid #176A37;
-    background: transparent;
+    background: none;
     border-radius: 32px;
+    border: 2px solid #176A37;
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
 
 main .starbucks-text .buttons button:hover {
-    transform: translateY(-10px)
+    transform: translateY(-15px);
 }
 
 main .starbucks-text .buttons button:first-child {
-    background: #176A37;
+    margin-right: 2rem;
     color: white;
-    margin-right: 5rem;
-}
-
-main .circle {
-    position: absolute;
-    min-width: 100%;
-    min-height: 130%;
     background: #176A37;
-    clip-path: circle(40%);
-    top: 15rem;
-    right: -40rem;
-    z-index: -1;
 }
 
-main img {
-    max-width: 30%;
+main .starbucks-images {
+    min-width: 600px;
+    min-height: 600px;
+    padding-left: 10rem;
+    z-index: 1;
+}
+
+main .starbucks-images img {
+    max-width: 420px;
+    z-index: 999;
+}
+
+.circle {
     position: absolute;
-    top: 10rem;
-    right: 10rem;
-    z-index: 2;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: #176A37;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
 }
